@@ -1,42 +1,22 @@
 package com.eiscube.hungergames;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
-import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.Item;
-import net.minecraftforge.common.EnumHelper;
 
-import com.eiscube.hungergames.blocks.BlockTest;
+import com.eiscube.hungergames.blocks.BlockHG;
 import com.eiscube.hungergames.crafting.Recipes;
-import com.eiscube.hungergames.items.ItemChisel;
-import com.eiscube.hungergames.items.ItemDiamondcutter;
-import com.eiscube.hungergames.items.ItemEnchantedstone;
-import com.eiscube.hungergames.items.ItemHammer;
-import com.eiscube.hungergames.items.ItemKnife;
 import com.eiscube.hungergames.items.ItemHG;
-import com.eiscube.hungergames.items.ItemSaw;
-import com.eiscube.hungergames.items.ItemSharpstone;
-import com.eiscube.hungergames.items.ItemTest;
-import com.eiscube.hungergames.items.ItemToolbox;
-import com.eiscube.hungergames.items.ItemWrench;
 import com.eiscube.hungergames.lib.Reference;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
-import cpw.mods.fml.common.registry.GameRegistry;
-import cpw.mods.fml.common.registry.LanguageRegistry;
-
-// kekse
 
 @Mod(modid = Reference.MOD_ID,name = Reference.MOD_NAME,version = Reference.MOD_VERSION)
 @NetworkMod(clientSideRequired = true, serverSideRequired = false)
 public class HungerGames {
 	
 	public static final String modid = Reference.MOD_ID;
-	
-	public static Block testBlock;
 	
 	public static Item ironhookItem;	//material for an Ropehook
 	
@@ -63,9 +43,8 @@ public class HungerGames {
 	@EventHandler
 	public void load(FMLInitializationEvent event)
 	{
-		testBlock = new BlockTest(500, Material.rock).setUnlocalizedName("testBlock");
-		GameRegistry.registerBlock(testBlock,Reference.MOD_ID + "_" + testBlock.getUnlocalizedName().substring(5));
-		LanguageRegistry.addName(testBlock, "Test Block");
+		
+		BlockHG.load();
 		
 		ItemHG.load();
 
