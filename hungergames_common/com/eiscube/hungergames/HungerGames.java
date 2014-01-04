@@ -40,11 +40,6 @@ public class HungerGames {
 	
 	public static Item ironhookItem;	//material for an Ropehook
 	
-	public static Item weakstickItem;	//stick 0
-	public static Item reedstickItem;	//stick I
-	public static Item heavystickItem;	//stick II
-	public static Item ironstick;		//stick III
-	
 	public static Item lianeItem;		//rope 0
 	public static Item planfibreItem;	//rope I
 	public static Item ropeItem;		//rope II

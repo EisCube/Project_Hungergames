@@ -3,12 +3,18 @@ package com.eiscube.hungergames.items;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.EnumHelper;
-import cpw.mods.fml.common.registry.LanguageRegistry;
 
-import com.eiscube.hungergames.*;
+import com.eiscube.hungergames.lib.ID;
+
+import cpw.mods.fml.common.registry.LanguageRegistry;
 
 public class ItemHG {
 	
+	
+	public static Item weakstickItem;	//stick 0
+	public static Item reedstickItem;	//stick I
+	public static Item heavystickItem;	//stick II
+	public static Item ironstickItem;	//stick III
 	
 	public static Item testItem;
 	public static Item sharpstoneItem;	   //crafting item 0
@@ -32,39 +38,62 @@ public class ItemHG {
 	public static void load()
 	{
 		
-		testItem = new ItemTest(5000).setUnlocalizedName("testItem");
+		testItem = new ItemTest(4999).setUnlocalizedName("testItem");
 		LanguageRegistry.addName(testItem,"Test Item");
+		
+		/*
+		 *		Tools
+		 */
 		
 		sharpstoneItem = new ItemSharpstone(5001,PHG_Sharpstone).setUnlocalizedName("sharpstoneItem");
 		LanguageRegistry.addName(sharpstoneItem,"Sharpstone");
 		
-		knifeItem = new ItemKnife(5002,PHG_Knife).setUnlocalizedName("knifeItem");
+		knifeItem = new ItemKnife(ID.ItemKnife_ID,PHG_Knife).setUnlocalizedName("knifeItem");
 		LanguageRegistry.addName(knifeItem,"Knife");
 		
-		sawItem = new ItemSaw(5003,PHG_Tool).setUnlocalizedName("sawItem");
+		sawItem = new ItemSaw(ID.ItemSaw_ID,PHG_Tool).setUnlocalizedName("sawItem");
 		LanguageRegistry.addName(sawItem,"Saw");
 		
-		chiselItem = new ItemChisel(5004,PHG_Tool).setUnlocalizedName("chiselItem");
+		chiselItem = new ItemChisel(ID.ItemChisel_ID,PHG_Tool).setUnlocalizedName("chiselItem");
 		LanguageRegistry.addName(chiselItem,"Chisel");
 		
-		hammerItem = new ItemHammer(5005).setUnlocalizedName("hammerItem");
+		hammerItem = new ItemHammer(ID.ItemHammer_ID).setUnlocalizedName("hammerItem");
 		LanguageRegistry.addName(hammerItem,"Hammer");
 		
-		wrenchItem = new ItemWrench(5006).setUnlocalizedName("wrenchItem");
+		wrenchItem = new ItemWrench(ID.ItemWrench_ID).setUnlocalizedName("wrenchItem");
 		LanguageRegistry.addName(wrenchItem,"Wrench");
 		
-		entchantedstoneItem = new ItemEnchantedstone(5007).setUnlocalizedName("entchantedstoneItem");
+		entchantedstoneItem = new ItemEnchantedstone(ID.ItemEnchantedstone_ID).setUnlocalizedName("entchantedstoneItem");
 		LanguageRegistry.addName(entchantedstoneItem,"Magic Stone");
 		
-		toolboxItem = new ItemToolbox(5008).setUnlocalizedName("toolboxItem");
+		toolboxItem = new ItemToolbox(ID.ItemToolbox_ID).setUnlocalizedName("toolboxItem");
 		LanguageRegistry.addName(toolboxItem,"Toolbox");
 		
-		diamondcutterItem = new ItemDiamondcutter(5009,PHG_Diamondcutter).setUnlocalizedName("diamondcutterItem");
+		diamondcutterItem = new ItemDiamondcutter(ID.ItemDiamondcutter_ID,PHG_Diamondcutter).setUnlocalizedName("diamondcutterItem");
 		LanguageRegistry.addName(diamondcutterItem,"Diamondcutter");
 		
-		//food
-		sandwichItem = new ItemFoodSanwich(5010,6,10.5F,false).setUnlocalizedName("sandwichItem");
+		/*
+		 * 		Food
+		 */
+		
+		sandwichItem = new ItemFoodSandwich(ID.ItemSandwich_ID,6,10.5F,false).setUnlocalizedName("sandwichItem");
 		LanguageRegistry.addName(sandwichItem, "Sanwiche");
+		
+		/*
+		 * 		Material
+		 */
+		
+		weakstickItem = new ItemMatWeakstick(ID.ItemWeakstick_ID).setUnlocalizedName("weakstickItem");
+		LanguageRegistry.addName(weakstickItem, "Weak Stick");
+		
+		reedstickItem = new ItemMatReedstick(ID.ItemReedstick_ID).setUnlocalizedName("reedstickItem");
+		LanguageRegistry.addName(reedstickItem, "Reedstick");
+		
+		heavystickItem = new ItemMatHeavystick(ID.ItemHeavystick_ID).setUnlocalizedName("reedstickItem");
+		LanguageRegistry.addName(reedstickItem, "Heavy Stick");
+		
+		ironstickItem = new ItemMatIronstick(ID.ItemIronstick_ID).setUnlocalizedName("ironstickItem");
+		LanguageRegistry.addName(ironstickItem, "Ironstick");
 		
 	}
 
