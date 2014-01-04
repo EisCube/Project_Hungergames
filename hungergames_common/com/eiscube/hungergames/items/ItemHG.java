@@ -45,7 +45,7 @@ public class ItemHG {
 		 *		Tools
 		 */
 		
-		sharpstoneItem = new ItemSharpstone(5001,PHG_Sharpstone).setUnlocalizedName("sharpstoneItem");
+		sharpstoneItem = new ItemSharpstone(ID.ItemSharpstone_ID,PHG_Sharpstone).setUnlocalizedName("sharpstoneItem");
 		LanguageRegistry.addName(sharpstoneItem,"Sharpstone");
 		
 		knifeItem = new ItemKnife(ID.ItemKnife_ID,PHG_Knife).setUnlocalizedName("knifeItem");

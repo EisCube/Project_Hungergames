@@ -14,7 +14,7 @@ public class ItemChisel extends ItemPickaxe {
 
 	public ItemChisel(int par1,EnumToolMaterial mat ) {
 		super(par1,mat);
-		this.setCreativeTab(CreativeTabs.tabMaterials);
+		this.setCreativeTab(CreativeTabs.tabTools);
 	}
 	
 	@SideOnly(Side.CLIENT)

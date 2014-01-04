@@ -12,7 +12,7 @@ public class ItemToolbox extends Item {
 
 	public ItemToolbox(int par1) {
 		super(par1);
-		this.setCreativeTab(CreativeTabs.tabMaterials);
+		this.setCreativeTab(CreativeTabs.tabTools);
 	}
 	
 	@SideOnly(Side.CLIENT)

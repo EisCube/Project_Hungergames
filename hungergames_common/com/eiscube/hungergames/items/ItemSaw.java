@@ -14,7 +14,7 @@ public class ItemSaw extends ItemAxe {
 
 	public ItemSaw(int par1,EnumToolMaterial mat ) {
 		super(par1,mat);
-		this.setCreativeTab(CreativeTabs.tabMaterials);
+		this.setCreativeTab(CreativeTabs.tabTools);
 	}
 	
 	@SideOnly(Side.CLIENT)

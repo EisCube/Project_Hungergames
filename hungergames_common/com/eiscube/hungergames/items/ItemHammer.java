@@ -12,7 +12,7 @@ public class ItemHammer extends Item {
 
 	public ItemHammer(int par1) {
 		super(par1);
-		this.setCreativeTab(CreativeTabs.tabMaterials);
+		this.setCreativeTab(CreativeTabs.tabTools);
 	}
 	
 	@SideOnly(Side.CLIENT)

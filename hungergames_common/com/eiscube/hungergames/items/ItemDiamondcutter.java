@@ -14,7 +14,7 @@ public class ItemDiamondcutter extends ItemSword {
 
 	public ItemDiamondcutter(int par1,EnumToolMaterial mat ) {
 		super(par1,mat);
-		this.setCreativeTab(CreativeTabs.tabMaterials);
+		this.setCreativeTab(CreativeTabs.tabTools);
 	}
 	
 	@SideOnly(Side.CLIENT)
