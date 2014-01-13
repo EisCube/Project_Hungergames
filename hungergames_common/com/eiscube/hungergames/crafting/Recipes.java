@@ -18,9 +18,88 @@ public class Recipes {
 			new ItemStack(Item.stick),new ItemStack(Block.dirt)
 		});
 		
-		GameRegistry.addRecipe(new ItemStack(ItemHG.sawItem), new Object[]{
-			" XX","Y  ",'Y' ,new ItemStack(Item.stick),'X', new ItemStack(Item.ingotIron)
+		/*
+		 * 		Spikes
+		 */
+		//weakspike
+		GameRegistry.addShapelessRecipe(new ItemStack(ItemHG.weakspikeItem),new Object[]{
+			new ItemStack(ItemHG.weakstickItem),new ItemStack(ItemHG.sharpstoneItem)
 		});
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(ItemHG.weakspikeItem),new Object[]{
+			new ItemStack(ItemHG.weakstickItem),new ItemStack(ItemHG.knifeItem)
+		});
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(ItemHG.weakspikeItem),new Object[]{
+			new ItemStack(ItemHG.weakstickItem),new ItemStack(ItemHG.diamondcutterItem)
+		});
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(ItemHG.toolboxItem),new Object[]{
+			new ItemStack(ItemHG.weakstickItem),new ItemStack(ItemHG.sharpstoneItem)
+		});
+		
+		//reedspike
+		GameRegistry.addShapelessRecipe(new ItemStack(ItemHG.reedspikeItem),new Object[]{
+			new ItemStack(ItemHG.reedstickItem),new ItemStack(ItemHG.sharpstoneItem)
+		});
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(ItemHG.reedspikeItem),new Object[]{
+			new ItemStack(ItemHG.reedstickItem),new ItemStack(ItemHG.knifeItem)
+		});
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(ItemHG.reedspikeItem),new Object[]{
+			new ItemStack(ItemHG.reedstickItem),new ItemStack(ItemHG.diamondcutterItem)
+		});
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(ItemHG.reedspikeItem),new Object[]{
+			new ItemStack(ItemHG.reedstickItem),new ItemStack(ItemHG.toolboxItem)
+		});
+		
+		//heavyspike
+		GameRegistry.addShapelessRecipe(new ItemStack(ItemHG.heavyspikeItem),new Object[]{
+			new ItemStack(ItemHG.heavystickItem),new ItemStack(ItemHG.knifeItem)
+		});
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(ItemHG.heavyspikeItem),new Object[]{
+			new ItemStack(ItemHG.heavystickItem),new ItemStack(ItemHG.diamondcutterItem)
+		});
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(ItemHG.heavyspikeItem),new Object[]{
+			new ItemStack(ItemHG.heavystickItem),new ItemStack(ItemHG.toolboxItem)
+		});
+		
+		//ironspike
+		GameRegistry.addShapelessRecipe(new ItemStack(ItemHG.ironspikeItem),new Object[]{
+			new ItemStack(ItemHG.ironstickItem),new ItemStack(ItemHG.diamondcutterItem)
+		});
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(ItemHG.ironspikeItem),new Object[]{
+			new ItemStack(ItemHG.ironstickItem),new ItemStack(ItemHG.hammerItem)
+		});
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(ItemHG.ironspikeItem),new Object[]{
+			new ItemStack(ItemHG.ironstickItem),new ItemStack(ItemHG.toolboxItem)
+		});
+		
+		/*
+		 * 		Tools
+		 */
+		
+		
+		GameRegistry.addRecipe(new ItemStack(ItemHG.sawItem), new Object[]{
+			"XYY",
+			'X',Item.stick,'Y',Item.ingotIron
+		});
+		
+		//Toolbox
+		GameRegistry.addShapelessRecipe(new ItemStack(ItemHG.toolboxItem),new Object[]{
+			new ItemStack(ItemHG.knifeItem),new ItemStack(ItemHG.chiselItem),new ItemStack(ItemHG.hammerItem)
+		});
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(ItemHG.toolboxItem,5),new Object[]{
+			new ItemStack(ItemHG.sawItem),new ItemStack(ItemHG.entchantedstoneItem),new ItemStack(ItemHG.wrenchItem)
+		});
+		
 	}
 
 }

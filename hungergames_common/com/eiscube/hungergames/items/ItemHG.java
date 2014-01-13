@@ -1,5 +1,6 @@
 package com.eiscube.hungergames.items;
 
+import net.minecraft.block.Block;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.EnumHelper;
@@ -19,7 +20,7 @@ public class ItemHG {
 	public static Item weakspikeItem;	//Spike 0
 	public static Item reedspikeItem;	//Spike I
 	public static Item heavyspikeItem;	//Spike II
-	public static Item ironspikeItem;	//Spike III --- Stacheln für evt. Dornenpanzer?
+	public static Item ironspikeItem;	//Spike III --- Stacheln für evt. Dornenpanzer? --- STACHELFALLEN YEAH !!!
 	
 	public static Item testItem;
 	public static Item sharpstoneItem;	   //crafting item 0
