@@ -35,6 +35,10 @@ public class ItemHG {
 	
 	public static Item sandwichItem;	   //food ca30% sat II
 	
+	public static Item lianeItem;		//rope 0
+	public static Item planfibreItem;	//rope I
+	public static Item ropeItem;		//rope II
+	public static Item bowstringItem;		//rope III (bow)
 	
 	public static EnumToolMaterial PHG_Knife = EnumHelper.addToolMaterial("Knife", 0, 25, 1.0F,-1.5F, 0); // 3 Schaden 25 uses
 	public static EnumToolMaterial PHG_Sharpstone = EnumHelper.addToolMaterial("Knife", 0, 10, 1.0F,-1.5F, 0); // 3 Schaden 10 uses
@@ -94,6 +98,8 @@ public class ItemHG {
 		 * 		Material
 		 */
 		
+		//Sticks
+		
 		weakstickItem = new ItemMatWeakstick(ID.ItemWeakstick_ID).setUnlocalizedName("weakstickItem");
 		LanguageRegistry.addName(weakstickItem, "Weak Stick");
 		
@@ -105,6 +111,20 @@ public class ItemHG {
 		
 		ironstickItem = new ItemMatIronstick(ID.ItemIronstick_ID).setUnlocalizedName("ironstickItem");
 		LanguageRegistry.addName(ironstickItem, "Ironstick");
+		
+		//Ropes
+		
+		lianeItem = new ItemMatLiane(ID.ItemLiane_ID).setUnlocalizedName("lianeItem");
+		LanguageRegistry.addName(lianeItem, "Liane");
+		
+		planfibreItem = new ItemMatPlantfibre(ID.ItemPlantfibre_ID).setUnlocalizedName("planfibreItem");
+		LanguageRegistry.addName(planfibreItem, "Plantfibre");
+		
+		ropeItem = new ItemMatRope(ID.ItemRope_ID).setUnlocalizedName("ropeItem");
+		LanguageRegistry.addName(ropeItem, "Rope");
+		
+		bowstringItem = new ItemMatBowstring(ID.ItemBowstring_ID).setUnlocalizedName("bowstringItem");
+		LanguageRegistry.addName(bowstringItem, "Bowstring");
 		
 		/*
 		 * 		Weapons
@@ -123,6 +143,7 @@ public class ItemHG {
 		
 		ironspikeItem = new ItemWeaponIronspike(ID.ItemIronspike_ID,PHG_Ironspike).setUnlocalizedName("ironspikeItem");
 		LanguageRegistry.addName(ironspikeItem, "Spiky  Ironstick");
+		
 		
 	}
 

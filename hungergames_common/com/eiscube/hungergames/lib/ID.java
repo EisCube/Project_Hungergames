@@ -25,5 +25,9 @@ public class ID {
 	public static final int ItemReedspike_ID = 5015;
 	public static final int ItemHeavyspike_ID = 5016;
 	public static final int ItemIronspike_ID = 5017;
-
+	
+	public static final int ItemLiane_ID = 5018;
+	public static final int ItemPlantfibre_ID = 5019;
+	public static final int ItemRope_ID = 5020;
+	public static final int ItemBowstring_ID = 5021;
 }
