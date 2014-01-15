@@ -30,4 +30,8 @@ public class ID {
 	public static final int ItemPlantfibre_ID = 5019;
 	public static final int ItemRope_ID = 5020;
 	public static final int ItemBowstring_ID = 5021;
+
+	public static final int ItemWeaklianeBow_ID = 5022;
+	public static final int ItemWeakplantBow_ID = 5023;
+	public static final int ItemWeakropeBow_ID = 5024;
 }

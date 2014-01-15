@@ -40,6 +40,10 @@ public class ItemHG {
 	public static Item ropeItem;		//rope II
 	public static Item bowstringItem;		//rope III (bow)
 	
+	public static Item weaklianebowItem; //bow I|I
+	public static Item weakplantbowItem; //bow I|II
+	public static Item weakropebowItem;  //bow I|III
+	
 	public static EnumToolMaterial PHG_Knife = EnumHelper.addToolMaterial("Knife", 0, 25, 1.0F,-1.5F, 0); // 3 Schaden 25 uses
 	public static EnumToolMaterial PHG_Sharpstone = EnumHelper.addToolMaterial("Knife", 0, 10, 1.0F,-1.5F, 0); // 3 Schaden 10 uses
 	public static EnumToolMaterial PHG_Diamondcutter = EnumHelper.addToolMaterial("Diamondcutter", 1, 100, 2.0F, 0.5F, 0); // 6 Schaden 100 uses
@@ -144,6 +148,16 @@ public class ItemHG {
 		ironspikeItem = new ItemWeaponIronspike(ID.ItemIronspike_ID,PHG_Ironspike).setUnlocalizedName("ironspikeItem");
 		LanguageRegistry.addName(ironspikeItem, "Spiky  Ironstick");
 		
+		//Bows weak ...
+		
+		weaklianebowItem = new ItemWeaponWeaklianebow(ID.ItemWeaklianeBow_ID).setUnlocalizedName("weaklianebowItem");
+		LanguageRegistry.addName(weaklianebowItem, "Weak Liane Bow");
+		
+		weakplantbowItem = new ItemWeaponWeakplantbow(ID.ItemWeakplantBow_ID).setUnlocalizedName("weakplantbowItem");
+		LanguageRegistry.addName(weakplantbowItem, "Weak Plantfibre Bow");
+		
+		weakropebowItem = new ItemWeaponWeakropebow(ID.ItemWeakropeBow_ID).setUnlocalizedName("weakropebowItem");
+		LanguageRegistry.addName(weakropebowItem, "Weak Rope Bow");
 		
 	}
 
