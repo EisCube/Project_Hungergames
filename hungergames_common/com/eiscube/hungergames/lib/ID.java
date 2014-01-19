@@ -30,11 +30,12 @@ public class ID {
 	public static final int ItemPlantfibre_ID = 5019;
 	public static final int ItemRope_ID = 5020;
 	public static final int ItemBowstring_ID = 5021;
+	
 
 	public static final int ItemWeaklianeBow_ID = 5022;
 	public static final int ItemWeakplantBow_ID = 5023;
 	public static final int ItemWeakropeBow_ID = 5024;
-	
+
 	public static final int ItemReedlianeBow_ID = 5025;
 	public static final int ItemReedplantBow_ID = 5026;
 	public static final int ItemReedropeBow_ID = 5027;
@@ -45,7 +46,7 @@ public class ID {
 	public static final int ItemHeavyropeBow_ID = 5031;
 	public static final int ItemHeavyBow_ID = 5032;
 	
-	public static final int ItemIronplantBow_ID = 5033;
-	public static final int ItemIronropeBow_ID = 5034;
-	public static final int ItemIronBow_ID = 5035;
+	public static final int ItemIronplantBow_ID = 5530;
+	public static final int ItemIronropeBow_ID = 5531;
+	public static final int ItemIronBow_ID = 5532;
 }

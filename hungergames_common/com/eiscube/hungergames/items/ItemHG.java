@@ -195,7 +195,7 @@ public class ItemHG {
 		heavyropebowItem = new ItemWeaponBow(ID.ItemHeavyropeBow_ID,3.5D).setUnlocalizedName("heavyropebowItem");
 		LanguageRegistry.addName(heavyropebowItem, "Heavy Rope Bow");
 		
-		ironbowItem = new ItemWeaponBow(ID.ItemHeavyBow_ID,4.0D).setUnlocalizedName("heavybowItem");
+		heavybowItem = new ItemWeaponBow(ID.ItemHeavyBow_ID,4.0D).setUnlocalizedName("heavybowItem");
 		LanguageRegistry.addName(heavybowItem, "Heavy Bow");
 		
 		ironplantbowItem = new ItemWeaponBow(ID.ItemIronplantBow_ID,4.0D).setUnlocalizedName("ironplantbowItem");
