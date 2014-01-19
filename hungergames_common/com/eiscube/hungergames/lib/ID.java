@@ -3,6 +3,7 @@ package com.eiscube.hungergames.lib;
 public class ID {
 	
 	public static final int BockReed_ID = 500;
+	public static final int BlockIronOre_ID = 501;
 	
 	public static final int ItemSharpstone_ID = 5000;
 	public static final int ItemKnife_ID = 5001;
@@ -46,7 +47,10 @@ public class ID {
 	public static final int ItemHeavyropeBow_ID = 5031;
 	public static final int ItemHeavyBow_ID = 5032;
 	
-	public static final int ItemIronplantBow_ID = 5530;
-	public static final int ItemIronropeBow_ID = 5531;
-	public static final int ItemIronBow_ID = 5532;
+	public static final int ItemIronplantBow_ID = 5033;
+	public static final int ItemIronropeBow_ID = 5034;
+	public static final int ItemIronBow_ID = 5035;
+	
+	
+	public static final int ItemIronChunk_ID = 5036;
 }

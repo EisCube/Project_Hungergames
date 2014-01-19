@@ -17,6 +17,8 @@ public class ItemHG {
 	public static Item heavystickItem;	//stick II
 	public static Item ironstickItem;	//stick III
 	
+	public static Item ironchunkItem;
+	
 	public static Item weakspikeItem;	//Spike 0
 	public static Item reedspikeItem;	//Spike I
 	public static Item heavyspikeItem;	//Spike II
@@ -130,6 +132,11 @@ public class ItemHG {
 		
 		ironstickItem = new ItemMatIronstick(ID.ItemIronstick_ID).setUnlocalizedName("ironstickItem");
 		LanguageRegistry.addName(ironstickItem, "Ironstick");
+		
+		//Misc.
+		
+		ironchunkItem = new ItemMatIronchunk(ID.ItemIronChunk_ID).setUnlocalizedName("ironchunkItem");
+		LanguageRegistry.addName(ironchunkItem, "Iron Chunk");
 		
 		//Ropes
 		

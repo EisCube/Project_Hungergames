@@ -22,20 +22,6 @@ public class HungerGames {
 	
 	public static final String modid = Reference.MOD_ID;
 	
-	public static Item ironhookItem;	//material for an Ropehook
-	
-	public static Item reedlianebowItem; //bow II|I
-	public static Item reedplantbowItem; //bow II|II
-	public static Item reedropebowItem;	 //bow II|III
-	public static Item reedbowItem;		 //bow II|IV
-	public static Item heavylianebowItem;//bow III|I
-	public static Item heavyplantbowItem;//bow III|II
-	public static Item heavyropebowItem; //bow III|III
-	public static Item heavybowItem;	 //bow III|IV
-	public static Item ironplantbowItem; //bow IV|II
-	public static Item ironropebowItem;	 //bow IV|III
-	public static Item ironbowItem;		 //bow IV|IV
-	
 	public static CreativeTabs tabHungerGames;
 
 	

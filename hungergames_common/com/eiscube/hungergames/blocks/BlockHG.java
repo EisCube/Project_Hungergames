@@ -12,11 +12,15 @@ public class BlockHG {
 
 	public static Block hgreedBlock;
 	
+	public static Block hgironoreBlock;
+	
 	public static void load(){
 		
 		hgreedBlock = new BlockHungerGamesReed(ID.BockReed_ID).setUnlocalizedName("hgreedBlock");
 		GameRegistry.registerBlock(hgreedBlock,Reference.MOD_ID + "_" + hgreedBlock.getUnlocalizedName().substring(5));
 		LanguageRegistry.addName(hgreedBlock, "Reed Block");
+		
+		hgironoreBlock = new BlockHungerGamesIronOre(ID.BlockIronOre_ID).setUnlocalizedName("hgironoreBlock");
 		
 	}
 	
