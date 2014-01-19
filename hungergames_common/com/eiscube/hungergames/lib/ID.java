@@ -34,4 +34,18 @@ public class ID {
 	public static final int ItemWeaklianeBow_ID = 5022;
 	public static final int ItemWeakplantBow_ID = 5023;
 	public static final int ItemWeakropeBow_ID = 5024;
+	
+	public static final int ItemReedlianeBow_ID = 5025;
+	public static final int ItemReedplantBow_ID = 5026;
+	public static final int ItemReedropeBow_ID = 5027;
+	public static final int ItemReedBow_ID = 5028;
+	
+	public static final int ItemHeavylianeBow_ID = 5029;
+	public static final int ItemHeavyplantBow_ID = 5030;
+	public static final int ItemHeavyropeBow_ID = 5031;
+	public static final int ItemHeavyBow_ID = 5032;
+	
+	public static final int ItemIronplantBow_ID = 5033;
+	public static final int ItemIronropeBow_ID = 5034;
+	public static final int ItemIronBow_ID = 5035;
 }

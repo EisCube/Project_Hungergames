@@ -40,9 +40,24 @@ public class ItemHG {
 	public static Item ropeItem;		//rope II
 	public static Item bowstringItem;		//rope III (bow)
 	
+	
 	public static Item weaklianebowItem; //bow I|I
 	public static Item weakplantbowItem; //bow I|II
 	public static Item weakropebowItem;  //bow I|III
+	
+	public static Item reedlianebowItem; //bow II|I
+	public static Item reedplantbowItem; //bow II|II
+	public static Item reedropebowItem;	 //bow II|III
+	public static Item reedbowItem;		 //bow II|IV
+	
+	public static Item heavylianebowItem;//bow III|I
+	public static Item heavyplantbowItem;//bow III|II
+	public static Item heavyropebowItem; //bow III|III
+	public static Item heavybowItem;	 //bow III|IV
+	
+	public static Item ironplantbowItem; //bow IV|II
+	public static Item ironropebowItem;	 //bow IV|III
+	public static Item ironbowItem;		 //bow IV|IV
 	
 	public static EnumToolMaterial PHG_Knife = EnumHelper.addToolMaterial("Knife", 0, 25, 1.0F,-1.5F, 0); // 3 Schaden 25 uses
 	public static EnumToolMaterial PHG_Sharpstone = EnumHelper.addToolMaterial("Knife", 0, 10, 1.0F,-1.5F, 0); // 3 Schaden 10 uses
@@ -150,14 +165,47 @@ public class ItemHG {
 		
 		//Bows weak ...
 		
-		weaklianebowItem = new ItemWeaponWeaklianebow(ID.ItemWeaklianeBow_ID, 0.5 ).setUnlocalizedName("weaklianebowItem");
+		weaklianebowItem = new ItemWeaponBow(ID.ItemWeaklianeBow_ID, 0.5 ).setUnlocalizedName("weaklianebowItem");
 		LanguageRegistry.addName(weaklianebowItem, "Weak Liane Bow");
 		
-		weakplantbowItem = new ItemWeaponWeakplantbow(ID.ItemWeakplantBow_ID,1.0D).setUnlocalizedName("weakplantbowItem");
+		weakplantbowItem = new ItemWeaponBow(ID.ItemWeakplantBow_ID,1.0D).setUnlocalizedName("weakplantbowItem");
 		LanguageRegistry.addName(weakplantbowItem, "Weak Plantfibre Bow");
 		
-		weakropebowItem = new ItemWeaponWeakropebow(ID.ItemWeakropeBow_ID,1.5D).setUnlocalizedName("weakropebowItem");
+		weakropebowItem = new ItemWeaponBow(ID.ItemWeakropeBow_ID,1.5D).setUnlocalizedName("weakropebowItem");
 		LanguageRegistry.addName(weakropebowItem, "Weak Rope Bow");
+		
+		reedlianebowItem = new ItemWeaponBow(ID.ItemReedlianeBow_ID, 1.5D).setUnlocalizedName("reedlianebowItem");
+		LanguageRegistry.addName(reedlianebowItem, "Reed Liane Bow");
+		
+		reedplantbowItem = new ItemWeaponBow(ID.ItemReedplantBow_ID,2.0D).setUnlocalizedName("reedplantbowItem");
+		LanguageRegistry.addName(reedplantbowItem, "Reed Plantfibre Bow");
+		
+		reedropebowItem = new ItemWeaponBow(ID.ItemReedropeBow_ID,2.5D).setUnlocalizedName("reedropebowItem");
+		LanguageRegistry.addName(reedropebowItem, "Reed Rope Bow");
+		
+		reedbowItem = new ItemWeaponBow(ID.ItemReedBow_ID,2.5D).setUnlocalizedName("reedbowItem");
+		LanguageRegistry.addName(reedbowItem, "Reed Bow");
+		
+		heavylianebowItem = new ItemWeaponBow(ID.ItemHeavylianeBow_ID, 2.5D).setUnlocalizedName("heavylianebowItem");
+		LanguageRegistry.addName(heavylianebowItem, "Heavy Liane Bow");
+		
+		heavyplantbowItem = new ItemWeaponBow(ID.ItemHeavyplantBow_ID,3.0D).setUnlocalizedName("heavyplantbowItem");
+		LanguageRegistry.addName(heavyplantbowItem, "Heavy Plantfibre Bow");
+		
+		heavyropebowItem = new ItemWeaponBow(ID.ItemHeavyropeBow_ID,3.5D).setUnlocalizedName("heavyropebowItem");
+		LanguageRegistry.addName(heavyropebowItem, "Heavy Rope Bow");
+		
+		ironbowItem = new ItemWeaponBow(ID.ItemHeavyBow_ID,4.0D).setUnlocalizedName("heavybowItem");
+		LanguageRegistry.addName(heavybowItem, "Heavy Bow");
+		
+		ironplantbowItem = new ItemWeaponBow(ID.ItemIronplantBow_ID,4.0D).setUnlocalizedName("ironplantbowItem");
+		LanguageRegistry.addName(ironplantbowItem, "Iron Plantfibre Bow");
+		
+		ironropebowItem = new ItemWeaponBow(ID.ItemIronropeBow_ID,4.5D).setUnlocalizedName("ironropebowItem");
+		LanguageRegistry.addName(ironropebowItem, "Iron Rope Bow");
+		
+		ironbowItem = new ItemWeaponBow(ID.ItemIronBow_ID,5.0D).setUnlocalizedName("ironbowItem");
+		LanguageRegistry.addName(ironbowItem, "Iron Bow");
 	}
 
 }

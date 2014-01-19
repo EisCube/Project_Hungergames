@@ -14,11 +14,11 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.player.ArrowLooseEvent;
 
-public class ItemWeaponWeaklianebow extends ItemBow {
+public class ItemWeaponBow extends ItemBow {
 	
 	private final double Damage;
 
-	public ItemWeaponWeaklianebow(int par1,double Damage) {
+	public ItemWeaponBow(int par1,double Damage) {
 		super(par1);
 		this.setCreativeTab(HungerGames.tabHungerGames);
 		this.Damage = Damage;
