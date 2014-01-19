@@ -12,7 +12,7 @@ public class ItemMatBowstring extends Item {
 
 	public ItemMatBowstring(int par1) {
 		super(par1);
-		this.setCreativeTab(CreativeTabs.tabMaterials);
+		this.setCreativeTab(HungerGames.tabHungerGames);
 	}
 	
 	@SideOnly(Side.CLIENT)

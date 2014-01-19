@@ -1,5 +1,6 @@
 package com.eiscube.hungergames;
 
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
 import com.eiscube.hungergames.blocks.BlockHG;
@@ -11,6 +12,9 @@ import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
+import cpw.mods.fml.common.registry.LanguageRegistry;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 @Mod(modid = Reference.MOD_ID,name = Reference.MOD_NAME,version = Reference.MOD_VERSION)
 @NetworkMod(clientSideRequired = true, serverSideRequired = false)
@@ -20,9 +24,6 @@ public class HungerGames {
 	
 	public static Item ironhookItem;	//material for an Ropehook
 	
-	public static Item weaklianebowItem; //bow I|I
-	public static Item weakplantbowItem; //bow I|II
-	public static Item weakropebowItem;  //bow I|III
 	public static Item reedlianebowItem; //bow II|I
 	public static Item reedplantbowItem; //bow II|II
 	public static Item reedropebowItem;	 //bow II|III
@@ -35,15 +36,28 @@ public class HungerGames {
 	public static Item ironropebowItem;	 //bow IV|III
 	public static Item ironbowItem;		 //bow IV|IV
 	
+	public static CreativeTabs tabHungerGames;
+
+	
 	@EventHandler
 	public void load(FMLInitializationEvent event)
 	{
+		
+		tabHungerGames = new CreativeTabs("PHG"){
+			@SideOnly(Side.CLIENT)
+			public int getTabIconItemIndex(){
+				return ItemHG.entchantedstoneItem.itemID;
+			}
+		};
+		
+		LanguageRegistry.instance().addStringLocalization(tabHungerGames.getTranslatedTabLabel(),"Project HungerGames");
 		
 		BlockHG.load();
 		
 		ItemHG.load();
 
 		Recipes.loadRecipes();
+		
 	}
 
 }

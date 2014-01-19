@@ -12,7 +12,7 @@ public class ItemTest extends Item {
 
 	public ItemTest(int id) {
 		super(id);
-		this.setCreativeTab(CreativeTabs.tabMaterials);
+		this.setCreativeTab(HungerGames.tabHungerGames);
 	}
 	
 	@SideOnly(Side.CLIENT)

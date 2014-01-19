@@ -150,15 +150,14 @@ public class ItemHG {
 		
 		//Bows weak ...
 		
-		weaklianebowItem = new ItemWeaponWeaklianebow(ID.ItemWeaklianeBow_ID).setUnlocalizedName("weaklianebowItem");
+		weaklianebowItem = new ItemWeaponWeaklianebow(ID.ItemWeaklianeBow_ID, 0.5 ).setUnlocalizedName("weaklianebowItem");
 		LanguageRegistry.addName(weaklianebowItem, "Weak Liane Bow");
 		
-		weakplantbowItem = new ItemWeaponWeakplantbow(ID.ItemWeakplantBow_ID).setUnlocalizedName("weakplantbowItem");
+		weakplantbowItem = new ItemWeaponWeakplantbow(ID.ItemWeakplantBow_ID,1.0D).setUnlocalizedName("weakplantbowItem");
 		LanguageRegistry.addName(weakplantbowItem, "Weak Plantfibre Bow");
 		
-		weakropebowItem = new ItemWeaponWeakropebow(ID.ItemWeakropeBow_ID).setUnlocalizedName("weakropebowItem");
+		weakropebowItem = new ItemWeaponWeakropebow(ID.ItemWeakropeBow_ID,1.5D).setUnlocalizedName("weakropebowItem");
 		LanguageRegistry.addName(weakropebowItem, "Weak Rope Bow");
-		
 	}
 
 }

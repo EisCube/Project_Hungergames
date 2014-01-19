@@ -13,7 +13,7 @@ public class ItemWeaponHeavyspike extends ItemSword {
 
 	public ItemWeaponHeavyspike(int par1, EnumToolMaterial par2EnumToolMaterial) {
 		super(par1, par2EnumToolMaterial);
-		this.setCreativeTab(CreativeTabs.tabCombat);
+		this.setCreativeTab(HungerGames.tabHungerGames);
 	}
 	
 	@SideOnly(Side.CLIENT)

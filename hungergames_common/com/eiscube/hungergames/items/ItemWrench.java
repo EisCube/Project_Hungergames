@@ -12,7 +12,7 @@ public class ItemWrench extends Item {
 
 	public ItemWrench(int par1) {
 		super(par1);
-		this.setCreativeTab(CreativeTabs.tabTools);
+		this.setCreativeTab(HungerGames.tabHungerGames);
 	}
 	
 	@SideOnly(Side.CLIENT)
