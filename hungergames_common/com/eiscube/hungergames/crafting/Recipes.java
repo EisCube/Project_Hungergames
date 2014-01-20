@@ -100,6 +100,12 @@ public class Recipes {
 			new ItemStack(ItemHG.sawItem),new ItemStack(ItemHG.entchantedstoneItem),new ItemStack(ItemHG.wrenchItem)
 		});
 		
+		//Ironstick
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(ItemHG.ironstickItem),new Object[]{
+			new ItemStack(ItemHG.ironchunkItem),new ItemStack(ItemHG.hammerItem)
+		});
+		
 	}
 
 }
