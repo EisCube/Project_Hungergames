@@ -109,6 +109,9 @@ public class Recipes {
 		GameRegistry.addShapelessRecipe(new ItemStack(ItemHG.ironstickItem),new Object[]{
 			new ItemStack(ItemHG.ironchunkItem),new ItemStack(ItemHG.toolboxItem)
 		});
+		
+		//Muffin-EisCube
+	
 	}
 
 }
