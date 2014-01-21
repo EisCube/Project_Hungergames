@@ -9,7 +9,7 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
 //Short Description: Can be collected with sharpstone from Tindermushroomblocks. Is used in combination with Flintstone to make an onetime Tinderbox(wich will probaly fall back to an flintstone.  
-//Pls work...
+
 public class ItemTinder extends Item{
 	public ItemTinder(int par1) {
 		super(par1);
