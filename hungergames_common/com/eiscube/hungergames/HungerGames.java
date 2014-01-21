@@ -1,7 +1,6 @@
 package com.eiscube.hungergames;
 
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
 
 import com.eiscube.hungergames.blocks.BlockHG;
 import com.eiscube.hungergames.crafting.Recipes;

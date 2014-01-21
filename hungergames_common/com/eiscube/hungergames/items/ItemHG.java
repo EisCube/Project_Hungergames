@@ -1,4 +1,4 @@
-package com.eiscube.hungergames.items;
+﻿package com.eiscube.hungergames.items;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.EnumToolMaterial;
@@ -22,7 +22,7 @@ public class ItemHG {
 	public static Item weakspikeItem;	//Spike 0
 	public static Item reedspikeItem;	//Spike I
 	public static Item heavyspikeItem;	//Spike II
-	public static Item ironspikeItem;	//Spike III --- Stacheln f�r evt. Dornenpanzer? --- STACHELFALLEN YEAH !!!
+	public static Item ironspikeItem;	//Spike III --- Stacheln für evt. Dornenpanzer? --- STACHELFALLEN YEAH !!!
 	
 	public static Item testItem;
 	public static Item sharpstoneItem;	   //crafting item 0
@@ -80,9 +80,6 @@ public class ItemHG {
 		testItem = new ItemTest(4999).setUnlocalizedName("testItem");
 		LanguageRegistry.addName(testItem,"Test Item");
 		
-		/*
-		 *		Tools
-		 */
 		
 		sharpstoneItem = new ItemSharpstone(ID.ItemSharpstone_ID,PHG_Sharpstone).setUnlocalizedName("sharpstoneItem");
 		LanguageRegistry.addName(sharpstoneItem,"Sharpstone");
@@ -111,16 +108,10 @@ public class ItemHG {
 		diamondcutterItem = new ItemDiamondcutter(ID.ItemDiamondcutter_ID,PHG_Diamondcutter).setUnlocalizedName("diamondcutterItem");
 		LanguageRegistry.addName(diamondcutterItem,"Diamondcutter");
 		
-		/*
-		 * 		Food
-		 */
 		
 		sandwichItem = new ItemFoodSandwich(ID.ItemSandwich_ID,6,10.5F,false).setUnlocalizedName("sandwichItem");
 		LanguageRegistry.addName(sandwichItem, "Sanwiche");
 		
-		/*
-		 * 		Material
-		 */
 		
 		//Sticks
 		
