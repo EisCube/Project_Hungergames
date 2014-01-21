@@ -63,6 +63,7 @@ public class ItemHG {
 	
 	//Tinderbox and stuff
 	public static Item tinderItem; //Tinder get collects form Tindermushrooms
+	public static Item tinderboxItem;
 	
 	public static EnumToolMaterial PHG_Knife = EnumHelper.addToolMaterial("Knife", 0, 25, 1.0F,-1.5F, 0); // 3 Schaden 25 uses
 	public static EnumToolMaterial PHG_Sharpstone = EnumHelper.addToolMaterial("Knife", 0, 10, 1.0F,-1.5F, 0); // 3 Schaden 10 uses
@@ -134,6 +135,9 @@ public class ItemHG {
 		
 		tinderItem = new ItemTinder(ID.ItemTinder_ID).setUnlocalizedName("tinderItem");
 		LanguageRegistry.addName(tinderItem, "Tinder");
+		
+		tinderboxItem = new ItemTinder(ID.ItemTinderBox_ID).setUnlocalizedName("tinderboxItem");
+		LanguageRegistry.addName(tinderboxItem,"Tinderbox");
 		
 		//Ropes
 		
