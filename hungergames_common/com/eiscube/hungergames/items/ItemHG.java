@@ -61,6 +61,9 @@ public class ItemHG {
 	public static Item ironropebowItem;	 //bow IV|III
 	public static Item ironbowItem;		 //bow IV|IV
 	
+	//Tinderbox and stuff
+	public static Item tinderItem; //Tinder get collects form Tindermushrooms
+	
 	public static EnumToolMaterial PHG_Knife = EnumHelper.addToolMaterial("Knife", 0, 25, 1.0F,-1.5F, 0); // 3 Schaden 25 uses
 	public static EnumToolMaterial PHG_Sharpstone = EnumHelper.addToolMaterial("Knife", 0, 10, 1.0F,-1.5F, 0); // 3 Schaden 10 uses
 	public static EnumToolMaterial PHG_Diamondcutter = EnumHelper.addToolMaterial("Diamondcutter", 1, 100, 2.0F, 0.5F, 0); // 6 Schaden 100 uses
@@ -137,6 +140,9 @@ public class ItemHG {
 		
 		ironchunkItem = new ItemMatIronchunk(ID.ItemIronChunk_ID).setUnlocalizedName("ironchunkItem");
 		LanguageRegistry.addName(ironchunkItem, "Iron Chunk");
+		
+		tinderItem = new ItemTinder(ID.ItemTinder_ID).setUnlocalizedName("tinderItem");
+		LanguageRegistry.addName(tinderItem, "Tinder");
 		
 		//Ropes
 		
