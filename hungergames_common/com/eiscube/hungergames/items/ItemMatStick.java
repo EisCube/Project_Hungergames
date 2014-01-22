@@ -8,9 +8,9 @@ import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
-public class ItemMatIronstick extends Item {
+public class ItemMatStick extends Item {
 
-	public ItemMatIronstick(int par1) {
+	public ItemMatStick(int par1) {
 		super(par1);
 		this.setCreativeTab(HungerGames.tabHungerGames);
 	}

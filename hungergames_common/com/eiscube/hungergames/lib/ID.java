@@ -57,4 +57,5 @@ public class ID {
 	public static final int ItemTinder_ID = 5100; //More space for my work
 	public static final int ItemTinderBox_ID = 5101;
     public static final int ItemFirestarter_ID = 5037;
+    public static final int ItemWoodenChunk_ID = 5038;
 }

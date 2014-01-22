@@ -6,18 +6,19 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
+import net.minecraft.item.ItemFood;
 
-public class ItemMatBowstring extends Item {
+public class ItemBasicFood extends ItemFood {
 
-	public ItemMatBowstring(int par1) {
-		super(par1);
+	public ItemBasicFood(int id, int hunger, float saturation, boolean IsWolfFood) {
+		super(id, hunger, saturation, IsWolfFood);
 		this.setCreativeTab(HungerGames.tabHungerGames);
 	}
-	
+
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IconRegister par1IconRegister)
 	{
 	    this.itemIcon = par1IconRegister.registerIcon(HungerGames.modid + ":" + (this.getUnlocalizedName().substring(5)));
 	}
+
 }

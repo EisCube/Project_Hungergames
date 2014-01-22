@@ -18,6 +18,7 @@ public class ItemHG {
 	public static Item ironstickItem;	//stick III
 	
 	public static Item ironchunkItem;
+	public static Item woodenchunkItem;
 	
 	public static Item weakspikeItem;	//Spike 0
 	public static Item reedspikeItem;	//Spike I
@@ -78,11 +79,7 @@ public class ItemHG {
 	
 	public static void load()
 	{
-		
-		testItem = new ItemTest(4999).setUnlocalizedName("testItem");
-		LanguageRegistry.addName(testItem,"Test Item");
-		
-		
+
 		sharpstoneItem = new ItemSharpstone(ID.ItemSharpstone_ID,PHG_Sharpstone).setUnlocalizedName("sharpstoneItem");
 		LanguageRegistry.addName(sharpstoneItem,"Sharpstone");
 		
@@ -111,28 +108,31 @@ public class ItemHG {
 		LanguageRegistry.addName(diamondcutterItem,"Diamondcutter");
 		
 		
-		sandwichItem = new ItemFoodSandwich(ID.ItemSandwich_ID,6,10.5F,false).setUnlocalizedName("sandwichItem");
-		LanguageRegistry.addName(sandwichItem, "Sanwiche");
+		sandwichItem = new ItemBasicFood(ID.ItemSandwich_ID,6,10.5F,false).setUnlocalizedName("sandwichItem");
+		LanguageRegistry.addName(sandwichItem, "Sanwich");
 		
 		
 		//Sticks
 		
-		weakstickItem = new ItemMatWeakstick(ID.ItemWeakstick_ID).setUnlocalizedName("weakstickItem");
+		weakstickItem = new ItemMatStick(ID.ItemWeakstick_ID).setUnlocalizedName("weakstickItem");
 		LanguageRegistry.addName(weakstickItem, "Weak Stick");
 		
 		reedstickItem = new ItemMatReedstick(ID.ItemReedstick_ID).setUnlocalizedName("reedstickItem");
 		LanguageRegistry.addName(reedstickItem, "Reedstick");
 		
-		heavystickItem = new ItemMatHeavystick(ID.ItemHeavystick_ID).setUnlocalizedName("heavystickItem");
+		heavystickItem = new ItemMatStick(ID.ItemHeavystick_ID).setUnlocalizedName("heavystickItem");
 		LanguageRegistry.addName(heavystickItem, "Heavy Stick");
 		
-		ironstickItem = new ItemMatIronstick(ID.ItemIronstick_ID).setUnlocalizedName("ironstickItem");
+		ironstickItem = new ItemMatStick(ID.ItemIronstick_ID).setUnlocalizedName("ironstickItem");
 		LanguageRegistry.addName(ironstickItem, "Ironstick");
 		
 		//Misc.
 		
-		ironchunkItem = new ItemMatIronchunk(ID.ItemIronChunk_ID).setUnlocalizedName("ironchunkItem");
+		ironchunkItem = new ItemMatChunk(ID.ItemIronChunk_ID).setUnlocalizedName("ironchunkItem");
 		LanguageRegistry.addName(ironchunkItem, "Iron Chunk");
+		
+		woodenchunkItem = new ItemMatChunk(ID.ItemWoodenChunk_ID).setUnlocalizedName("woodenchunkItem");
+		LanguageRegistry.addName(woodenchunkItem, "Wood Chunk");
 		
 		tinderItem = new ItemTinder(ID.ItemTinder_ID).setUnlocalizedName("tinderItem");
 		LanguageRegistry.addName(tinderItem, "Tinder");
@@ -147,16 +147,16 @@ public class ItemHG {
 		
 		//Ropes
 		
-		lianeItem = new ItemMatLiane(ID.ItemLiane_ID).setUnlocalizedName("lianeItem");
+		lianeItem = new ItemMatRope(ID.ItemLiane_ID).setUnlocalizedName("lianeItem");
 		LanguageRegistry.addName(lianeItem, "Liane");
 		
-		planfibreItem = new ItemMatPlantfibre(ID.ItemPlantfibre_ID).setUnlocalizedName("planfibreItem");
+		planfibreItem = new ItemMatRope(ID.ItemPlantfibre_ID).setUnlocalizedName("planfibreItem");
 		LanguageRegistry.addName(planfibreItem, "Plantfibre");
 		
 		ropeItem = new ItemMatRope(ID.ItemRope_ID).setUnlocalizedName("ropeItem");
 		LanguageRegistry.addName(ropeItem, "Rope");
 		
-		bowstringItem = new ItemMatBowstring(ID.ItemBowstring_ID).setUnlocalizedName("bowstringItem");
+		bowstringItem = new ItemMatRope(ID.ItemBowstring_ID).setUnlocalizedName("bowstringItem");
 		LanguageRegistry.addName(bowstringItem, "Bowstring");
 		
 		/*
@@ -165,16 +165,16 @@ public class ItemHG {
 		
 		//Spikes
 		
-		weakspikeItem = new ItemWeaponWeakspike(ID.ItemWeakspike_ID,PHG_Weakspike).setUnlocalizedName("weakspikeItem");
+		weakspikeItem = new ItemWeaponSpike(ID.ItemWeakspike_ID,PHG_Weakspike).setUnlocalizedName("weakspikeItem");
 		LanguageRegistry.addName(weakspikeItem, "Spiky Weak Stick");
 		
-		reedspikeItem = new ItemWeaponReedspike(ID.ItemReedspike_ID,PHG_Reedspike).setUnlocalizedName("reedspikeItem");
+		reedspikeItem = new ItemWeaponSpike(ID.ItemReedspike_ID,PHG_Reedspike).setUnlocalizedName("reedspikeItem");
 		LanguageRegistry.addName(reedspikeItem, "Spiky Reedstick");
 		
-		heavyspikeItem = new ItemWeaponHeavyspike(ID.ItemHeavyspike_ID,PHG_Heavyspike).setUnlocalizedName("heavyspikeItem");
+		heavyspikeItem = new ItemWeaponSpike(ID.ItemHeavyspike_ID,PHG_Heavyspike).setUnlocalizedName("heavyspikeItem");
 		LanguageRegistry.addName(heavyspikeItem, "Spiky Heavy Stick");
 		
-		ironspikeItem = new ItemWeaponIronspike(ID.ItemIronspike_ID,PHG_Ironspike).setUnlocalizedName("ironspikeItem");
+		ironspikeItem = new ItemWeaponSpike(ID.ItemIronspike_ID,PHG_Ironspike).setUnlocalizedName("ironspikeItem");
 		LanguageRegistry.addName(ironspikeItem, "Spiky  Ironstick");
 		
 		//Bows weak ...
