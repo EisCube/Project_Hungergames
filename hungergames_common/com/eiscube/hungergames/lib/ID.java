@@ -5,6 +5,9 @@ public class ID {
 	public static final int BockReed_ID = 500;
 	public static final int BlockIronOre_ID = 501;
     public static final int FluidMud_ID = 502;
+    public static final int BlockWeakStick_ID = 503;
+    public static final int BlockHeavyStick_ID = 504;
+    public static final int BlockTinder_ID = 505;
 	
 	public static final int ItemSharpstone_ID = 5000;
 	public static final int ItemKnife_ID = 5001;

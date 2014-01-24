@@ -1,6 +1,5 @@
 ﻿package com.eiscube.hungergames.items;
 
-import net.minecraft.block.Block;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.EnumHelper;

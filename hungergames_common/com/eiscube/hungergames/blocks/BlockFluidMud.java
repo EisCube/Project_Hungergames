@@ -4,7 +4,6 @@ import com.eiscube.hungergames.HungerGames;
 
 import net.minecraft.block.material.Material;
 import net.minecraftforge.fluids.BlockFluidClassic;
-import net.minecraftforge.fluids.Fluid;
 
 public class BlockFluidMud extends BlockFluidClassic {
 

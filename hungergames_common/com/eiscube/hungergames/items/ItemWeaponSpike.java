@@ -5,7 +5,6 @@ import com.eiscube.hungergames.HungerGames;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IconRegister;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.ItemSword;
 
@@ -16,6 +15,7 @@ public class ItemWeaponSpike extends ItemSword {
 		this.setCreativeTab(HungerGames.tabHungerGames);
 	}
 	
+	@Override
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IconRegister par1IconRegister)
 	{

@@ -6,8 +6,6 @@ import com.eiscube.hungergames.blocks.BlockHG;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IconRegister;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemReed;
 
 public class ItemMatReedstick extends ItemReed {
@@ -17,6 +15,7 @@ public class ItemMatReedstick extends ItemReed {
 		this.setCreativeTab(HungerGames.tabHungerGames);
 	}
 	
+	@Override
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IconRegister par1IconRegister)
 	{

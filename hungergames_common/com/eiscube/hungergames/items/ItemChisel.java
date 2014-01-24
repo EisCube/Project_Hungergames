@@ -1,7 +1,6 @@
 package com.eiscube.hungergames.items;
 
 import net.minecraft.client.renderer.texture.IconRegister;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.ItemPickaxe;
 
@@ -17,6 +16,7 @@ public class ItemChisel extends ItemPickaxe {
 		this.setCreativeTab(HungerGames.tabHungerGames);
 	}
 	
+	@Override
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IconRegister par1IconRegister)
 	{

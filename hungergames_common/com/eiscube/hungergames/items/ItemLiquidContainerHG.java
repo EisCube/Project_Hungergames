@@ -20,7 +20,8 @@ public class ItemLiquidContainerHG extends Item {
         this.setCreativeTab(HungerGames.tabHungerGames);
     }
     
-    public ItemStack onItemRightClick(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer)
+    @Override
+	public ItemStack onItemRightClick(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer)
     {
         MovingObjectPosition movingobjectposition = this.getMovingObjectPositionFromPlayer(par2World, par3EntityPlayer, true);
 

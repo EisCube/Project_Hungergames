@@ -16,7 +16,9 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 public class BlockHG {
 
 	public static Block hgreedBlock;
-	
+	public static Block weakStickBlock;    //I want the same block for an sapling thing and a branch thing (metadata Blocks)
+	public static Block heavyStickBlock;
+	public static Block tinderBlock;
 	public static Block hgironoreBlock;
 	
 	public static Block mudFluidBlock;
@@ -29,8 +31,13 @@ public class BlockHG {
 		registerBlock(hgreedBlock,"Reed Block");
 		
 		hgironoreBlock = new BlockHungerGamesIronOre(ID.BlockIronOre_ID).setUnlocalizedName("hgironoreBlock");
-		
         registerBlock(mudFluidBlock,"Mud");
+        
+        weakStickBlock = new BlockStick(ID.BlockWeakStick_ID).setUnlocalizedName("weakStickBlock");
+        registerBlock(weakStickBlock,"Weak Branch");
+        heavyStickBlock = new BlockStick(ID.BlockHeavyStick_ID).setUnlocalizedName("heavyStickBlock");
+        registerBlock(heavyStickBlock,"Heavy Branch");
+        
 	}
 	
 

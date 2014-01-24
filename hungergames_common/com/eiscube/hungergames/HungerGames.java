@@ -39,6 +39,7 @@ public class HungerGames {
 	{
 		
 		tabHungerGames = new CreativeTabs("PHG"){
+			@Override
 			@SideOnly(Side.CLIENT)
 			public int getTabIconItemIndex(){
 				return ItemHG.entchantedstoneItem.itemID;

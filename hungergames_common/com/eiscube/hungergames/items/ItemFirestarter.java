@@ -14,7 +14,8 @@ public class ItemFirestarter extends Item {
         this.setCreativeTab(HungerGames.tabHungerGames);
     }
 
-    @SideOnly(Side.CLIENT)
+    @Override
+	@SideOnly(Side.CLIENT)
     public void registerIcons(IconRegister par1IconRegister)
     {
         this.itemIcon = par1IconRegister.registerIcon(HungerGames.modid + ":" + (this.getUnlocalizedName().substring(5)));

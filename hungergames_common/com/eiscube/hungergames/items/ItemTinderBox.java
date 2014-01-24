@@ -13,6 +13,7 @@ public class ItemTinderBox extends Item {
 		super(par1);
 		// TODO Auto-generated constructor stub
 	}
+	@Override
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IconRegister par1IconRegister)
 	{
