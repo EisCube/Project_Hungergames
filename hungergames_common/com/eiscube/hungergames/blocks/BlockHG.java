@@ -38,6 +38,8 @@ public class BlockHG {
         heavyStickBlock = new BlockStick(ID.BlockHeavyStick_ID).setUnlocalizedName("heavyStickBlock");
         registerBlock(heavyStickBlock,"Heavy Branch");
         
+        tinderBlock = new BlockTinder(ID.BlockTinder_ID).setUnlocalizedName("tinderBlock");
+        registerBlock(tinderBlock,"Tinder");
 	}
 	
 
