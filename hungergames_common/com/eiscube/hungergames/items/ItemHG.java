@@ -62,7 +62,7 @@ public class ItemHG {
 	public static Item ironropebowItem;	 //bow IV|III
 	public static Item ironbowItem;		 //bow IV|IV
 	
-	//Tinderbox and stuff
+	//Fire and stuff
 	public static Item tinderItem; //Tinder get collects form Tindermushrooms
 	public static Item tinderboxItem;
 	public static Item firestarterItem;

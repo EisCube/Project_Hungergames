@@ -26,8 +26,7 @@ public class BlockHG {
 	public static void load(){
 		
 		hgreedBlock = new BlockHungerGamesReed(ID.BockReed_ID).setUnlocalizedName("hgreedBlock");
-		GameRegistry.registerBlock(hgreedBlock,Reference.MOD_ID + "_" + hgreedBlock.getUnlocalizedName().substring(5));
-		LanguageRegistry.addName(hgreedBlock, "Reed Block");
+		registerBlock(hgreedBlock,"Reed Block");
 		
 		hgironoreBlock = new BlockHungerGamesIronOre(ID.BlockIronOre_ID).setUnlocalizedName("hgironoreBlock");
 		
@@ -37,10 +36,13 @@ public class BlockHG {
 		mudMaterial = new MaterialLiquid(MapColor.dirtColor);
 		
 		mudFluidBlock = new BlockFluidMud(ID.FluidMud_ID).setUnlocalizedName("mudFluidBlock");
-		GameRegistry.registerBlock(mudFluidBlock,Reference.MOD_ID + "_" + mudFluidBlock.getUnlocalizedName().substring(5));
-		LanguageRegistry.addName(mudFluidBlock, "Mud");
+		registerBlock(mudFluidBlock,"Mud");
 
-
+	}
+	
+	private static void registerBlock(Block block,String name){
+	       GameRegistry.registerBlock(block,Reference.MOD_ID + "_" + block.getUnlocalizedName().substring(5));
+	        LanguageRegistry.addName(block, name);
 	}
 	
 }
