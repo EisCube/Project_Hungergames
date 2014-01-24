@@ -30,15 +30,18 @@ public class BlockHG {
 		
 		hgironoreBlock = new BlockHungerGamesIronOre(ID.BlockIronOre_ID).setUnlocalizedName("hgironoreBlock");
 		
-		mudFluid = new Fluid("mud").setBlockID(ID.FluidMud_ID);
-		FluidRegistry.registerFluid(mudFluid);
-		
-		mudMaterial = new MaterialLiquid(MapColor.dirtColor);
-		
-		mudFluidBlock = new BlockFluidMud(ID.FluidMud_ID).setUnlocalizedName("mudFluidBlock");
-		registerBlock(mudFluidBlock,"Mud");
-
+        registerBlock(mudFluidBlock,"Mud");
 	}
+	
+
+    public static void preInit() {
+        
+        mudFluid = new Fluid("mud").setBlockID(ID.FluidMud_ID);
+        FluidRegistry.registerFluid(mudFluid);
+   
+        mudFluidBlock = new BlockFluidMud(ID.FluidMud_ID).setUnlocalizedName("mudFluidBlock");
+    }
+    
 	
 	private static void registerBlock(Block block,String name){
 	       GameRegistry.registerBlock(block,Reference.MOD_ID + "_" + block.getUnlocalizedName().substring(5));

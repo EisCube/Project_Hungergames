@@ -1,5 +1,7 @@
 package com.eiscube.hungergames;
 
+import java.io.IOException;
+
 import net.minecraft.creativetab.CreativeTabs;
 
 import com.eiscube.hungergames.blocks.BlockHG;
@@ -10,6 +12,7 @@ import com.eiscube.hungergames.lib.Reference;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 import cpw.mods.fml.relauncher.Side;
@@ -22,6 +25,13 @@ public class HungerGames {
 	public static final String modid = Reference.MOD_ID;
 	
 	public static CreativeTabs tabHungerGames;
+	
+	@EventHandler
+	public void preInit(FMLPreInitializationEvent event)throws IOException{
+	    
+	    BlockHG.preInit();
+	    
+	}
 
 	
 	@EventHandler

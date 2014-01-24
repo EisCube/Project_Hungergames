@@ -9,9 +9,10 @@ import net.minecraftforge.fluids.Fluid;
 public class BlockFluidMud extends BlockFluidClassic {
 
     public BlockFluidMud(int id) {
-        super(id, BlockHG.mudFluid, BlockHG.mudMaterial);
+        super(id, BlockHG.mudFluid, Material.water);
         this.setCreativeTab(HungerGames.tabHungerGames);
         this.setTextureName(HungerGames.modid + ":" + (this.getUnlocalizedName().substring(5)));
+        this.setDensity(10000);
     }
 
 }
