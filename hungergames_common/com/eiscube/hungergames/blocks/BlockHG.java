@@ -7,6 +7,7 @@ import net.minecraft.block.material.MaterialLiquid;
 import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fluids.FluidRegistry;
 
+import com.eiscube.hungergames.items.ItemHG;
 import com.eiscube.hungergames.lib.ID;
 import com.eiscube.hungergames.lib.Reference;
 
@@ -33,9 +34,9 @@ public class BlockHG {
 		hgironoreBlock = new BlockHungerGamesIronOre(ID.BlockIronOre_ID).setUnlocalizedName("hgironoreBlock");
         registerBlock(mudFluidBlock,"Mud");
         
-        weakStickBlock = new BlockStick(ID.BlockWeakStick_ID).setUnlocalizedName("weakStickBlock");
+        weakStickBlock = new BlockStick(ID.BlockWeakStick_ID,ItemHG.weakstickItem).setUnlocalizedName("weakStickBlock");
         registerBlock(weakStickBlock,"Weak Branch");
-        heavyStickBlock = new BlockStick(ID.BlockHeavyStick_ID).setUnlocalizedName("heavyStickBlock");
+        heavyStickBlock = new BlockStick(ID.BlockHeavyStick_ID,ItemHG.heavystickItem).setUnlocalizedName("heavyStickBlock");
         registerBlock(heavyStickBlock,"Heavy Branch");
         
         tinderBlock = new BlockTinder(ID.BlockTinder_ID).setUnlocalizedName("tinderBlock");
