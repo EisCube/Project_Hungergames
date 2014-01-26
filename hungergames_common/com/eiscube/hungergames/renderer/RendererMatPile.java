@@ -1,23 +1,42 @@
 package com.eiscube.hungergames.renderer;
 
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ResourceLocation;
 
 import org.lwjgl.opengl.GL11;
 
+import com.eiscube.hungergames.items.ItemHG;
 import com.eiscube.hungergames.lib.Reference;
-import com.eiscube.hungergames.models.MatPileModel;
+import com.eiscube.hungergames.models.MatPile1Model;
+import com.eiscube.hungergames.models.MatPile2Model;
+import com.eiscube.hungergames.models.MatPile3Model;
+import com.eiscube.hungergames.models.ModelBaseExtended;
 
 public class RendererMatPile extends TileEntitySpecialRenderer {
 	
-	public static ResourceLocation texture = (new ResourceLocation(Reference.MOD_ID + ":" + "textures/items/sharpstoneItem.png"));
+	public static ResourceLocation texture;//(new ResourceLocation(Reference.MOD_ID + ":" + "textures/items/sharpstoneItem.png"));
 	
-	private  MatPileModel model;
+	private  ModelBaseExtended model;
 
-	public RendererMatPile(){
-		this.model = new MatPileModel();
+	public RendererMatPile(int itemCount,int itemId){
+		switch(itemCount)
+		{
+		case 1:this.model = new MatPile1Model();break;
+		case 2:this.model = new MatPile2Model();break;
+		case 3:this.model = new MatPile3Model();break;
+		}
+		if(itemId == ItemHG.sharpstoneItem.itemID){
+			texture =(new ResourceLocation(Reference.MOD_ID + ":" + "textures/items/sharpstoneItem.png"));
+		}
+		if(itemId == ItemHG.weakstickItem.itemID){
+			texture =(new ResourceLocation(Reference.MOD_ID + ":" + "textures/items/sharpstoneItem.png"));
+		}
+		if(itemId == ItemHG.heavystickItem.itemID){
+			texture =(new ResourceLocation(Reference.MOD_ID + ":" + "textures/items/sharpstoneItem.png"));
+		}
 	}
 
 	public void renderTileEntityAt(TileEntity tileentity,double x,double y,double z,float f)

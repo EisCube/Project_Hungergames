@@ -54,9 +54,9 @@ public class HungerGames {
 		
 		GameRegistry.registerTileEntity(TileEntityMatPile.class,"MatPile");
 		
-		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityMatPile.class, new RendererMatPile());
-		
 		ItemHG.preload();
+		
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityMatPile.class, new RendererMatPile(2,ItemHG.sharpstoneItem.itemID));
 
 		BlockHG.load();
 		
