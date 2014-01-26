@@ -7,7 +7,9 @@ public class ID {
     public static final int FluidMud_ID = 502;
     public static final int BlockWeakStick_ID = 503;
     public static final int BlockHeavyStick_ID = 504;
-    public static final int BlockTinder_ID = 505;
+	public static final int BlockWeakTreeStick_ID = 505;
+	public static final int BlockHeavyTreeStick_ID = 506;
+    public static final int BlockTinder_ID = 507;
 	
 	public static final int ItemSharpstone_ID = 5000;
 	public static final int ItemKnife_ID = 5001;

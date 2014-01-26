@@ -78,8 +78,30 @@ public class ItemHG {
 	public static EnumToolMaterial PHG_Heavyspike = EnumHelper.addToolMaterial("Heavyspike", 0, 30, 1.0F,-1.5F, 0);
 	public static EnumToolMaterial PHG_Ironspike = EnumHelper.addToolMaterial("Ironspike", 0, 50, 1.0F,-0.5F, 0);
 	
+	public static void preload()
+	{
+		
+		//Sticks
+		
+		weakstickItem = new ItemMatStick(ID.ItemWeakstick_ID).setUnlocalizedName("weakstickItem");
+		LanguageRegistry.addName(weakstickItem, "Weak Stick");
+		
+		heavystickItem = new ItemMatStick(ID.ItemHeavystick_ID).setUnlocalizedName("heavystickItem");
+		LanguageRegistry.addName(heavystickItem, "Heavy Stick");
+		
+		ironstickItem = new ItemMatStick(ID.ItemIronstick_ID).setUnlocalizedName("ironstickItem");
+		LanguageRegistry.addName(ironstickItem, "Ironstick");
+		
+	}
+	
 	public static void load()
 	{
+		
+		
+		reedstickItem = new ItemMatReedstick(ID.ItemReedstick_ID).setUnlocalizedName("reedstickItem");
+		LanguageRegistry.addName(reedstickItem, "Reedstick");
+		
+		//
 
 		sharpstoneItem = new ItemSharpstone(ID.ItemSharpstone_ID,PHG_Sharpstone).setUnlocalizedName("sharpstoneItem");
 		LanguageRegistry.addName(sharpstoneItem,"Sharpstone");
@@ -111,21 +133,6 @@ public class ItemHG {
 		
 		sandwichItem = new ItemBasicFood(ID.ItemSandwich_ID,6,10.5F,false).setUnlocalizedName("sandwichItem");
 		LanguageRegistry.addName(sandwichItem, "Sanwich");
-		
-		
-		//Sticks
-		
-		weakstickItem = new ItemMatStick(ID.ItemWeakstick_ID).setUnlocalizedName("weakstickItem");
-		LanguageRegistry.addName(weakstickItem, "Weak Stick");
-		
-		reedstickItem = new ItemMatReedstick(ID.ItemReedstick_ID).setUnlocalizedName("reedstickItem");
-		LanguageRegistry.addName(reedstickItem, "Reedstick");
-		
-		heavystickItem = new ItemMatStick(ID.ItemHeavystick_ID).setUnlocalizedName("heavystickItem");
-		LanguageRegistry.addName(heavystickItem, "Heavy Stick");
-		
-		ironstickItem = new ItemMatStick(ID.ItemIronstick_ID).setUnlocalizedName("ironstickItem");
-		LanguageRegistry.addName(ironstickItem, "Ironstick");
 		
 		//Misc.
 		

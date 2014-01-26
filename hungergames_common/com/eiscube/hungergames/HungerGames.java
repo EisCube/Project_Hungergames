@@ -48,6 +48,8 @@ public class HungerGames {
 		
 		LanguageRegistry.instance().addStringLocalization(tabHungerGames.getTranslatedTabLabel(),"Project HungerGames");
 		
+		ItemHG.preload();
+
 		BlockHG.load();
 		
 		ItemHG.load();
