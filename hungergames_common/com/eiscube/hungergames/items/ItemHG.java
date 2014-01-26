@@ -92,6 +92,10 @@ public class ItemHG {
 		ironstickItem = new ItemMatStick(ID.ItemIronstick_ID).setUnlocalizedName("ironstickItem");
 		LanguageRegistry.addName(ironstickItem, "Ironstick");
 		
+		sharpstoneItem = new ItemSharpstone(ID.ItemSharpstone_ID,PHG_Sharpstone).setUnlocalizedName("sharpstoneItem");
+		LanguageRegistry.addName(sharpstoneItem,"Sharpstone");
+		
+		
 	}
 	
 	public static void load()
@@ -103,9 +107,6 @@ public class ItemHG {
 		
 		//
 
-		sharpstoneItem = new ItemSharpstone(ID.ItemSharpstone_ID,PHG_Sharpstone).setUnlocalizedName("sharpstoneItem");
-		LanguageRegistry.addName(sharpstoneItem,"Sharpstone");
-		
 		knifeItem = new ItemKnife(ID.ItemKnife_ID,PHG_Knife).setUnlocalizedName("knifeItem");
 		LanguageRegistry.addName(knifeItem,"Knife");
 		

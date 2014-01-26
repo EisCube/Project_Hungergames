@@ -8,12 +8,16 @@ import com.eiscube.hungergames.blocks.BlockHG;
 import com.eiscube.hungergames.crafting.Recipes;
 import com.eiscube.hungergames.items.ItemHG;
 import com.eiscube.hungergames.lib.Reference;
+import com.eiscube.hungergames.renderer.RendererMatPile;
+import com.eiscube.hungergames.tileenteties.TileEntityMatPile;
 
+import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
+import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -47,6 +51,10 @@ public class HungerGames {
 		};
 		
 		LanguageRegistry.instance().addStringLocalization(tabHungerGames.getTranslatedTabLabel(),"Project HungerGames");
+		
+		GameRegistry.registerTileEntity(TileEntityMatPile.class,"MatPile");
+		
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityMatPile.class, new RendererMatPile());
 		
 		ItemHG.preload();
 

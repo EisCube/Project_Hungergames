@@ -24,6 +24,8 @@ public class BlockHG {
 	public static Block tinderBlock;
 	public static Block hgironoreBlock;
 	
+	public static Block matPileBlock;
+	
 	public static Block mudFluidBlock;
 	public static Fluid mudFluid;
 	public static Material mudMaterial;
@@ -45,6 +47,8 @@ public class BlockHG {
         heavyStickTreeBlock = new BlockStickBranch(ID.BlockHeavyTreeStick_ID,ItemHG.heavystickItem).setUnlocalizedName("heavyStickTreeBlock");
         registerBlock(heavyStickTreeBlock,"Heavy Branch");
         
+        matPileBlock = new BlockMatPile(ID.BlockMatPileSharpstone1_ID,ItemHG.sharpstoneItem.itemID).setUnlocalizedName("matPileSharpstone1Block");
+        registerBlock(matPileBlock,"MatPile Block");
         
         tinderBlock = new BlockTinder(ID.BlockTinder_ID).setUnlocalizedName("tinderBlock");
         registerBlock(tinderBlock,"Tinder");
