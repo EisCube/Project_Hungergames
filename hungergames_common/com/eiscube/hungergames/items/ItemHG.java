@@ -145,7 +145,7 @@ public class ItemHG {
 		tinderItem = new ItemTinder(ID.ItemTinder_ID).setUnlocalizedName("tinderItem");
 		LanguageRegistry.addName(tinderItem, "Tinder");
 		
-		tinderboxItem = new ItemTinder(ID.ItemTinderBox_ID).setUnlocalizedName("tinderboxItem");
+		tinderboxItem = new ItemTinderBox(ID.ItemTinderBox_ID).setUnlocalizedName("tinderboxItem");
 		LanguageRegistry.addName(tinderboxItem,"Tinderbox");
 		
 		firestarterItem = new ItemFirestarter(ID.ItemFirestarter_ID).setUnlocalizedName("firestarterItem");
