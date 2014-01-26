@@ -71,7 +71,7 @@ public class ItemTinderBox extends Item {
                 par3World.setBlock(par4, par5, par6, Block.fire.blockID);
             }
             par2EntityPlayer.inventory.addItemStackToInventory(new ItemStack(Item.flint));
-            par1ItemStack.damageItem(1, par2EntityPlayer);
+            par1ItemStack.damageItem(2, par2EntityPlayer);
             return true;
         }
     }

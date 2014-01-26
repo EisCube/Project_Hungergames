@@ -188,7 +188,7 @@ public class ItemHG {
 		ironspikeItem = new ItemWeaponSpike(ID.ItemIronspike_ID,PHG_Ironspike).setUnlocalizedName("ironspikeItem");
 		LanguageRegistry.addName(ironspikeItem, "Spiky  Ironstick");
 		
-		//Bows weak ...
+		//Bows
 		
 		weaklianebowItem = new ItemWeaponBow(ID.ItemWeaklianeBow_ID, 0.5 ).setUnlocalizedName("weaklianebowItem");
 		LanguageRegistry.addName(weaklianebowItem, "Weak Liane Bow");
