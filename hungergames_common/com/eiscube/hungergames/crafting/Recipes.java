@@ -102,6 +102,11 @@ public class Recipes {
 		
 		//Ironstick
 		
+		//Tinderbox
+		GameRegistry.addShapelessRecipe(new ItemStack(ItemHG.tinderboxItem), new Object[]{
+			new ItemStack(ItemHG.tinderItem), new ItemStack(Item.flint)});
+		
+		
 		GameRegistry.addShapelessRecipe(new ItemStack(ItemHG.ironstickItem),new Object[]{
 			new ItemStack(ItemHG.ironchunkItem),new ItemStack(ItemHG.hammerItem)
 		});
