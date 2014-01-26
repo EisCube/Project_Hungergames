@@ -36,12 +36,9 @@ public class BlockHG {
 		hgironoreBlock = new BlockHungerGamesIronOre(ID.BlockIronOre_ID).setUnlocalizedName("hgironoreBlock");
         registerBlock(mudFluidBlock,"Mud");
         
-        /*
-         * Bug with Saplings and Water -> Crashing
-         */
-        weakStickGroundBlock = new BlockStickSapling(ID.BlockWeakStick_ID,ItemHG.weakstickItem).setUnlocalizedName("weakStickBlock");
+        weakStickGroundBlock = new BlockStickSapling(ID.BlockWeakStick_ID,ItemHG.weakstickItem.itemID).setUnlocalizedName("weakStickBlock");
         registerBlock(weakStickGroundBlock,"Weak Sapling");
-        heavyStickGroundBlock = new BlockStickSapling(ID.BlockHeavyStick_ID,ItemHG.heavystickItem).setUnlocalizedName("heavyStickBlock");
+        heavyStickGroundBlock = new BlockStickSapling(ID.BlockHeavyStick_ID,ItemHG.heavystickItem.itemID).setUnlocalizedName("heavyStickBlock");
         registerBlock(heavyStickGroundBlock,"Heavy Sapling");
         weakStickTreeBlock = new BlockStickBranch(ID.BlockWeakTreeStick_ID,ItemHG.weakstickItem).setUnlocalizedName("weakStickTreeBlock");
         registerBlock(weakStickTreeBlock,"Weak Branch");
