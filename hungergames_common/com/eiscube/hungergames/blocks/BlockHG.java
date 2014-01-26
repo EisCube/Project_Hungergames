@@ -17,8 +17,10 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 public class BlockHG {
 
 	public static Block hgreedBlock;
-	public static Block weakStickBlock;    //I want the same block for an sapling thing and a branch thing (metadata Blocks)
-	public static Block heavyStickBlock;
+	public static Block weakStickGroundBlock;    //I want the same block for an sapling thing and a branch thing (metadata Blocks)
+	public static Block heavyStickGroundBlock;
+	public static Block weakStickTreeBlock;
+	public static Block heavyStickTreeBlock;
 	public static Block tinderBlock;
 	public static Block hgironoreBlock;
 	
@@ -34,10 +36,18 @@ public class BlockHG {
 		hgironoreBlock = new BlockHungerGamesIronOre(ID.BlockIronOre_ID).setUnlocalizedName("hgironoreBlock");
         registerBlock(mudFluidBlock,"Mud");
         
-        weakStickBlock = new BlockStick(ID.BlockWeakStick_ID,ItemHG.weakstickItem).setUnlocalizedName("weakStickBlock");
-        registerBlock(weakStickBlock,"Weak Branch");
-        heavyStickBlock = new BlockStick(ID.BlockHeavyStick_ID,ItemHG.heavystickItem).setUnlocalizedName("heavyStickBlock");
-        registerBlock(heavyStickBlock,"Heavy Branch");
+        /*
+         * Bug with Saplings and Water -> Crashing
+         */
+        weakStickGroundBlock = new BlockStickSapling(ID.BlockWeakStick_ID,ItemHG.weakstickItem).setUnlocalizedName("weakStickBlock");
+        registerBlock(weakStickGroundBlock,"Weak Sapling");
+        heavyStickGroundBlock = new BlockStickSapling(ID.BlockHeavyStick_ID,ItemHG.heavystickItem).setUnlocalizedName("heavyStickBlock");
+        registerBlock(heavyStickGroundBlock,"Heavy Sapling");
+        weakStickTreeBlock = new BlockStickBranch(ID.BlockWeakTreeStick_ID,ItemHG.weakstickItem).setUnlocalizedName("weakStickTreeBlock");
+        registerBlock(weakStickTreeBlock,"Weak Branch");
+        heavyStickTreeBlock = new BlockStickBranch(ID.BlockHeavyTreeStick_ID,ItemHG.heavystickItem).setUnlocalizedName("heavyStickTreeBlock");
+        registerBlock(heavyStickTreeBlock,"Heavy Branch");
+        
         
         tinderBlock = new BlockTinder(ID.BlockTinder_ID).setUnlocalizedName("tinderBlock");
         registerBlock(tinderBlock,"Tinder");

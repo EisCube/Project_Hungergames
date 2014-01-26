@@ -14,11 +14,11 @@ import net.minecraftforge.common.EnumPlantType;
 import net.minecraftforge.common.ForgeDirection;
 import net.minecraftforge.common.IPlantable;
 
-public class BlockStick extends Block{
+public class BlockStickSapling extends Block{
 
 	private final Item itemDropped;
 	
-	public BlockStick(int id,Item itemDropped) {
+	public BlockStickSapling(int id,Item itemDropped) {
 		super(id,Material.plants);
 		this.setCreativeTab(HungerGames.tabHungerGames);
 		this.itemDropped = itemDropped;
@@ -27,7 +27,7 @@ public class BlockStick extends Block{
 	@Override
     public int getRenderType()
     {
-        return 0;
+        return 2;
     }
 	
     public boolean isOpaqueCube()
