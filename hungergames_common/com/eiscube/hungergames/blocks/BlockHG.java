@@ -1,12 +1,11 @@
 package com.eiscube.hungergames.blocks;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.material.MaterialLiquid;
 import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fluids.FluidRegistry;
 
+import com.eiscube.hungergames.blocks.MatPile.BlockMatPile;
 import com.eiscube.hungergames.items.ItemHG;
 import com.eiscube.hungergames.lib.ID;
 import com.eiscube.hungergames.lib.Reference;
@@ -17,7 +16,7 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 public class BlockHG {
 
 	public static Block hgreedBlock;
-	public static Block weakStickGroundBlock;    //I want the same block for an sapling thing and a branch thing (metadata Blocks)
+	public static Block weakStickGroundBlock;
 	public static Block heavyStickGroundBlock;
 	public static Block weakStickTreeBlock;
 	public static Block heavyStickTreeBlock;
@@ -46,10 +45,10 @@ public class BlockHG {
         registerBlock(weakStickTreeBlock,"Weak Branch");
         heavyStickTreeBlock = new BlockStickBranch(ID.BlockHeavyTreeStick_ID,ItemHG.heavystickItem).setUnlocalizedName("heavyStickTreeBlock");
         registerBlock(heavyStickTreeBlock,"Heavy Branch");
-        
-        matPileBlock = new BlockMatPile(ID.BlockMatPileSharpstone1_ID,ItemHG.sharpstoneItem.itemID).setUnlocalizedName("matPileSharpstone1Block");
-        registerBlock(matPileBlock,"MatPile Block");
-        
+       /* Adding it later if i am more skilled then
+        Block matPileBlockSharpstone1 = new BlockMatPile(ID.BlockMatPileSharpstone_ID,1,ItemHG.sharpstoneItem.itemID).setUnlocalizedName("matPileSharpstone1Block");
+        registerBlock(matPileBlockSharpstone1,"MatPile Block");
+        */
         tinderBlock = new BlockTinder(ID.BlockTinder_ID).setUnlocalizedName("tinderBlock");
         registerBlock(tinderBlock,"Tinder");
 	}

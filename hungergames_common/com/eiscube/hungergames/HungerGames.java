@@ -52,11 +52,7 @@ public class HungerGames {
 		
 		LanguageRegistry.instance().addStringLocalization(tabHungerGames.getTranslatedTabLabel(),"Project HungerGames");
 		
-		GameRegistry.registerTileEntity(TileEntityMatPile.class,"MatPile");
-		
 		ItemHG.preload();
-		
-		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityMatPile.class, new RendererMatPile(2,ItemHG.sharpstoneItem.itemID));
 
 		BlockHG.load();
 		
