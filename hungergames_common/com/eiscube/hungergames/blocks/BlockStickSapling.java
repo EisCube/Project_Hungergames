@@ -17,8 +17,9 @@ public class BlockStickSapling extends BlockFlower{
 	
 	public BlockStickSapling(int id,int idDropped) {
 		super(id);
-		this.setCreativeTab(HungerGames.tabHungerGames);
+		this.setCreativeTab(HungerGames.tabHungerGamesFood);
 		this.itemDropped = idDropped;
+		this.setBlockBounds(0 + (1/16), 0 + (1/16), 0 + (1/16), 1 - (1/16), 1 - (1/16), 1 - (1/16));
 	}
 	
     public int idDropped(int par1, Random par2Random, int par3)

@@ -12,7 +12,7 @@ public class ItemWeaponSpike extends ItemSword {
 
 	public ItemWeaponSpike(int par1, EnumToolMaterial par2EnumToolMaterial) {
 		super(par1, par2EnumToolMaterial);
-		this.setCreativeTab(HungerGames.tabHungerGames);
+		this.setCreativeTab(HungerGames.tabHungerGamesWeapons);
 	}
 	
 	@Override

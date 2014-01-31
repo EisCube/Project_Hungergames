@@ -9,7 +9,7 @@ public class BlockHungerGamesIronOre extends Block {
 
 	public BlockHungerGamesIronOre(int par1) {
 		super(par1,Material.rock);
-		this.setCreativeTab(HungerGames.tabHungerGames);
+		this.setCreativeTab(HungerGames.tabHungerGamesFood);
 	}
 
 }

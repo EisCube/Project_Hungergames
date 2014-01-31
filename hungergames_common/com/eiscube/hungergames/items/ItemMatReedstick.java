@@ -12,7 +12,7 @@ public class ItemMatReedstick extends ItemReed {
 
 	public ItemMatReedstick(int par1) {
 		super(par1, BlockHG.hgreedBlock);
-		this.setCreativeTab(HungerGames.tabHungerGames);
+		this.setCreativeTab(HungerGames.tabHungerGamesMaterial);
 	}
 	
 	@Override

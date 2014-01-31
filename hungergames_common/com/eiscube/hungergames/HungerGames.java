@@ -28,7 +28,10 @@ public class HungerGames {
 	
 	public static final String modid = Reference.MOD_ID;
 	
-	public static CreativeTabs tabHungerGames;
+	public static CreativeTabs tabHungerGamesMaterial;
+	public static CreativeTabs tabHungerGamesWeapons;
+	public static CreativeTabs tabHungerGamesTools;
+	public static CreativeTabs tabHungerGamesFood;
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event)throws IOException{
@@ -42,15 +45,39 @@ public class HungerGames {
 	public void load(FMLInitializationEvent event)
 	{
 		
-		tabHungerGames = new CreativeTabs("PHG"){
+		tabHungerGamesMaterial = new CreativeTabs("PHG_M"){
+			@Override
+			@SideOnly(Side.CLIENT)
+			public int getTabIconItemIndex(){
+				return ItemHG.heavystickItem.itemID;
+			}
+		};
+		tabHungerGamesWeapons = new CreativeTabs("PHG_W"){
+			@Override
+			@SideOnly(Side.CLIENT)
+			public int getTabIconItemIndex(){
+				return ItemHG.knifeItem.itemID;
+			}
+		};
+		tabHungerGamesTools = new CreativeTabs("PHG_T"){
 			@Override
 			@SideOnly(Side.CLIENT)
 			public int getTabIconItemIndex(){
 				return ItemHG.entchantedstoneItem.itemID;
 			}
 		};
+		tabHungerGamesFood = new CreativeTabs("PHG_F"){
+			@Override
+			@SideOnly(Side.CLIENT)
+			public int getTabIconItemIndex(){
+				return ItemHG.sandwichItem.itemID;
+			}
+		};
 		
-		LanguageRegistry.instance().addStringLocalization(tabHungerGames.getTranslatedTabLabel(),"Project HungerGames");
+		LanguageRegistry.instance().addStringLocalization(tabHungerGamesMaterial.getTranslatedTabLabel(),"Project HungerGames Materials");
+		LanguageRegistry.instance().addStringLocalization(tabHungerGamesWeapons.getTranslatedTabLabel(),"Project HungerGames Weapons");
+		LanguageRegistry.instance().addStringLocalization(tabHungerGamesTools.getTranslatedTabLabel(),"Project HungerGames Tools");
+		LanguageRegistry.instance().addStringLocalization(tabHungerGamesFood.getTranslatedTabLabel(),"Project HungerGames Food");
 		
 		ItemHG.preload();
 

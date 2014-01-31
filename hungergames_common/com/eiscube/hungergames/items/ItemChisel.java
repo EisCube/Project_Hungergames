@@ -13,7 +13,7 @@ public class ItemChisel extends ItemPickaxe {
 
 	public ItemChisel(int par1,EnumToolMaterial mat ) {
 		super(par1,mat);
-		this.setCreativeTab(HungerGames.tabHungerGames);
+		this.setCreativeTab(HungerGames.tabHungerGamesTools);
 	}
 	
 	@Override

@@ -14,7 +14,7 @@ public class BlockStickBranch extends Block {
 	
 	public BlockStickBranch(int ID,Item dropped) {
 		super(ID, Material.plants);
-		this.setCreativeTab(HungerGames.tabHungerGames);
+		this.setCreativeTab(HungerGames.tabHungerGamesFood);
 		this.itemDropped=dropped;
 	}
 	

@@ -11,7 +11,7 @@ public class ItemBasicFood extends ItemFood {
 
 	public ItemBasicFood(int id, int hunger, float saturation, boolean IsWolfFood) {
 		super(id, hunger, saturation, IsWolfFood);
-		this.setCreativeTab(HungerGames.tabHungerGames);
+		this.setCreativeTab(HungerGames.tabHungerGamesFood);
 	}
 
 	@Override

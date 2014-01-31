@@ -19,7 +19,7 @@ public class ItemWeaponBow extends ItemBow {
 
 	public ItemWeaponBow(int par1,double Damage) {
 		super(par1);
-		this.setCreativeTab(HungerGames.tabHungerGames);
+		this.setCreativeTab(HungerGames.tabHungerGamesWeapons);
 		this.Damage = Damage;
 	}
 	

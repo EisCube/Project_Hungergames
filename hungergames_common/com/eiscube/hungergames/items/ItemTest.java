@@ -11,7 +11,7 @@ public class ItemTest extends Item {
 
 	public ItemTest(int id) {
 		super(id);
-		this.setCreativeTab(HungerGames.tabHungerGames);
+		this.setCreativeTab(HungerGames.tabHungerGamesFood);
 	}
 	
 	@Override

@@ -17,7 +17,7 @@ public class ItemTinderBox extends Item {
 	public ItemTinderBox(int par1) {
 		super(par1);
 		this.setMaxDamage(1);
-		this.setCreativeTab(HungerGames.tabHungerGames);
+		this.setCreativeTab(HungerGames.tabHungerGamesTools);
 		// TODO Auto-generated constructor stub
 	}
 	@Override

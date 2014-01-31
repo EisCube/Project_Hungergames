@@ -11,7 +11,7 @@ public class ItemHammer extends Item {
 
 	public ItemHammer(int par1) {
 		super(par1);
-		this.setCreativeTab(HungerGames.tabHungerGames);
+		this.setCreativeTab(HungerGames.tabHungerGamesTools);
 	}
 	
 	@Override

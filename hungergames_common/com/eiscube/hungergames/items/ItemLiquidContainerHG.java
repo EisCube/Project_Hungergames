@@ -17,7 +17,7 @@ public class ItemLiquidContainerHG extends Item {
         super(id);
         this.setHasSubtypes(true);
         this.setMaxDamage(0);
-        this.setCreativeTab(HungerGames.tabHungerGames);
+        this.setCreativeTab(HungerGames.tabHungerGamesFood);
     }
     
     @Override

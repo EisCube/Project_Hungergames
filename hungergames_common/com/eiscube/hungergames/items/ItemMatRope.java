@@ -11,7 +11,7 @@ public class ItemMatRope extends Item {
 
 	public ItemMatRope(int par1) {
 		super(par1);
-		this.setCreativeTab(HungerGames.tabHungerGames);
+		this.setCreativeTab(HungerGames.tabHungerGamesMaterial);
 	}
 	
 	@Override
