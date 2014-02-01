@@ -23,6 +23,13 @@ public class BlockHG {
 	public static Block tinderBlock;
 	public static Block hgironoreBlock;
 	
+	public static Block matPileBlockWeakstick1;
+	public static Block matPileBlockWeakstick2;
+	public static Block matPileBlockWeakstick3;
+	public static Block matPileBlockHeavystick1;
+	public static Block matPileBlockHeavystick2;
+	public static Block matPileBlockHeavystick3;
+	
 	public static Block matPileBlock;
 	
 	public static Block mudFluidBlock;
@@ -45,10 +52,23 @@ public class BlockHG {
         registerBlock(weakStickTreeBlock,"Weak Branch");
         heavyStickTreeBlock = new BlockStickBranch(ID.BlockHeavyTreeStick_ID,ItemHG.heavystickItem).setUnlocalizedName("heavyStickTreeBlock");
         registerBlock(heavyStickTreeBlock,"Heavy Branch");
-       /* Adding it later if i am more skilled then
-        Block matPileBlockSharpstone1 = new BlockMatPile(ID.BlockMatPileSharpstone_ID,1,ItemHG.sharpstoneItem.itemID).setUnlocalizedName("matPileSharpstone1Block");
+        
+        Block matPileBlockSharpstone1 = new BlockMatPile(ID.BlockMatPileSharpstone1_ID,1,ItemHG.sharpstoneItem.itemID).setUnlocalizedName("matPileSharpstone1Block");
         registerBlock(matPileBlockSharpstone1,"MatPile Block");
-        */
+        
+        matPileBlockWeakstick1 = new BlockMatPile(ID.BlockMatPileWeakstick1_ID,1,ItemHG.weakstickItem.itemID).setUnlocalizedName("matPileWeakstick1Block");
+        registerBlock(matPileBlockWeakstick1,"MatPile Block");
+        matPileBlockWeakstick2 = new BlockMatPile(ID.BlockMatPileWeakstick2_ID,2,ItemHG.weakstickItem.itemID).setUnlocalizedName("matPileWeakstick2Block");
+        registerBlock(matPileBlockWeakstick2,"MatPile Block");
+        matPileBlockWeakstick3 = new BlockMatPile(ID.BlockMatPileWeakstick3_ID,3,ItemHG.weakstickItem.itemID).setUnlocalizedName("matPileWeakstick3Block");
+        registerBlock(matPileBlockWeakstick3,"MatPile Block");
+        matPileBlockHeavystick1 = new BlockMatPile(ID.BlockMatPileHeavystick1_ID,1,ItemHG.heavystickItem.itemID).setUnlocalizedName("matPileHeavystick1Block");
+        registerBlock(matPileBlockHeavystick1,"MatPile Block");
+        matPileBlockHeavystick2 = new BlockMatPile(ID.BlockMatPileWeakstick2_ID,2,ItemHG.heavystickItem.itemID).setUnlocalizedName("matPileHeavystick2Block");
+        registerBlock(matPileBlockHeavystick2,"MatPile Block");
+        matPileBlockHeavystick3 = new BlockMatPile(ID.BlockMatPileWeakstick3_ID,3,ItemHG.heavystickItem.itemID).setUnlocalizedName("matPileHeavystick3Block");
+        registerBlock(matPileBlockHeavystick3,"MatPile Block");
+        
         tinderBlock = new BlockTinder(ID.BlockTinder_ID).setUnlocalizedName("tinderBlock");
         registerBlock(tinderBlock,"Tinder");
 	}

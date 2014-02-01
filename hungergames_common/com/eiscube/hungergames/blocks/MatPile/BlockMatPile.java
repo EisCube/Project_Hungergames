@@ -44,26 +44,6 @@ public class BlockMatPile extends BlockContainer {
 	}
 	
 	
-	/*
-	 * If Items in Pile are less than 3 then it returns true
-	 */
-	public boolean isStackFull()
-	{
-		if(itemCount <= 3 && itemCount > 0){
-			return false;
-		}else{
-			return true;
-		}
-	}
-	
-	/*
-	 * Increase Items in Stack
-	 */
-	public void increaseStack()
-	{
-		itemCount += 1;
-	}
-	
 	private TileEntity tileEntityfromData(int id,int count) {
 		if(id == ItemHG.sharpstoneItem.itemID)
 		{

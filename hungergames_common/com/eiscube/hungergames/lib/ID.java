@@ -10,8 +10,16 @@ public class ID {
 	public static final int BlockWeakTreeStick_ID = 505;
 	public static final int BlockHeavyTreeStick_ID = 506;
     public static final int BlockTinder_ID = 507;
+    
 	public static final int BlockMatPileSharpstone1_ID = 508;
-	public static final int BlockMatPileSharpstone_ID = 509;
+	public static final int BlockMatPileSharpstone2_ID = 509;
+	public static final int BlockMatPileSharpstone3_ID = 510;
+	public static final int BlockMatPileWeakstick1_ID = 511;
+	public static final int BlockMatPileWeakstick2_ID = 512;
+	public static final int BlockMatPileWeakstick3_ID = 513;
+	public static final int BlockMatPileHeavystick1_ID = 514;
+	public static final int BlockMatPileHeavystick2_ID = 515;
+	public static final int BlockMatPileHeavystick3_ID = 516;
 	
 	public static final int ItemSharpstone_ID = 5000;
 	public static final int ItemKnife_ID = 5001;
